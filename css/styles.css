@@ -348,6 +348,12 @@ img {
 }
 
 /* ======== AJUSTES MOBILE ======== */
+.btn {
+  display: inline-block;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   /* Header e logo */
   .header-content {
