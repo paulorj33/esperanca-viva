@@ -394,8 +394,12 @@ img {
   }
 
   .btn {
-    width: 100%;
-    padding: 14px;
+  display: block;       
+  width: 40%;          /* largura do botão */
+  padding: 12px;
+  margin: 0 auto 25px;  /* centraliza e mantém o espaçamento com o footer */
+  text-align: center;   /* garante o texto centralizado */
+  font-size: 0.9rem;
   }
 
   /* Cards (projetos) */
