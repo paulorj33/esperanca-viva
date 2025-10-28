@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esperança Viva | Galeria de Atividades</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <img src="assets/titulo.png" alt="Símbolo Esperança Viva" class="logo">
+      <h1>Esperança Viva</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="galeria.html" class="ativo">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="section-title">Galeria de Atividades</h2>
+
+      <div class="gallery">
+        <img src="assets/criancas.jpg" onclick="openLightbox(this)">
+        <img src="assets/alimentos.jpg" onclick="openLightbox(this)">
+        <img src="assets/limpeza.jpg" onclick="openLightbox(this)">
+        <img src="assets/acao.jpg" onclick="openLightbox(this)">
+        <img src="assets/plantio.jpg" onclick="openLightbox(this)">
+        <img src="assets/estudando.jpg" onclick="openLightbox(this)">
+        <img src="assets/idoso.jpg" onclick="openLightbox(this)">
+        <img src="assets/alimentacao.jpg" onclick="openLightbox(this)">
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox separado -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Esperança Viva. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+  function openLightbox(img) {
+    document.getElementById("lightbox-img").src = img.src;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+  </script>
+
+</body>
+</html>
